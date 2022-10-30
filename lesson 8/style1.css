@@ -1,0 +1,35 @@
+.wrapper{
+display: grid;
+grid-template-columns: 200px 80px 50px ;
+grid-template-rows: 75px 200px 75px ;
+gap: 5px;
+grid-template-areas:
+"ye ye ye"
+"ar na ad"
+"fo fo fo";
+
+}
+
+
+.yellow{
+background-color: yellow;
+grid-area: ye;
+}
+.nav{
+    background-color: yellow;
+    grid-area: na;
+}
+.article{
+    background-color: yellow;
+    grid-area: ar;
+    
+    
+}
+.ads{
+    background-color: yellow;
+    grid-area: ad;
+}
+.footer{
+    background-color: yellow;
+   grid-area: fo;
+}
