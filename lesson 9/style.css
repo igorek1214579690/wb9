@@ -1,0 +1,33 @@
+p{
+    background-color: rgb(133, 0, 241);
+}
+#position{
+    position: relative;
+    top: 50 px;
+    left: 70px;
+    background-color: chartreuse;
+    opacity: 0.5;
+}
+div{
+    border: 1px solid black;
+}
+#position-a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: fuchsia;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#position-f{
+    position: fixed;
+    bottom: 200px;
+    background-color: cyan;
+    left: 550px;
+}
+.position-s{
+    position: sticky;
+    top: 0;
+}
