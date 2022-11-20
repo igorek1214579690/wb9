@@ -1,0 +1,12 @@
+header{
+    text-align: center ;
+    background-color: rgb(238, 70, 70);
+
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
+.nav-link{
+    color : black;
+}
