@@ -3,10 +3,52 @@ header{
     background-color: rgb(238, 70, 70);
 
 }
-.img{
-    width: 250px;
-    height: 250px;
-}
+
 .nav-link{
     color : black;
+}
+.div{
+    text-align: center;
+
+}
+.img{
+    height: 300px;
+    width: 300px;
+    align-content: space-around;
+}
+.products{
+    display: flex;
+    
+}
+.reklama{
+    /* display: flex; */
+    /* text-align: center; */
+    
+}
+
+.items {
+    border: inset 4px red ;
+
+}
+.vidio{
+    display: flex;
+    justify-content: space-between;
+}
+.zagolovak{
+    text-align: center;
+}
+.otzv{
+  
+}   
+.container{
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0px;
+    margin: 100px 0;
+}
+.klient{
+    border-radius:  90%;
+    width: 100px;
+    height: 100px;
 }
