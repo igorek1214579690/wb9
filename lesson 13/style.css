@@ -1,0 +1,35 @@
+.animate{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    animation-play-state: running ;
+}
+.animate:hover{
+    animation: move 5s linear alternate infinite;
+}
+
+
+
+@keyframes move {
+    from { 
+        left: 0;
+        width: 100px;
+    }
+    25%{
+        background-color: blue;
+    }
+    50% {
+        width: 150px;
+        background-color: black;
+    }
+    75%{
+        background-color: chartreuse;
+    }      
+        
+   
+    to {
+        width: 100px;
+        left: 50px;
+    }
+}
