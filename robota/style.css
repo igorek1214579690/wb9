@@ -19,7 +19,7 @@ header{
 }
 .productss{
     display: flex;
-    
+    justify-content: space-between;
 }
 .reklama{
     /* display: flex; */
@@ -28,7 +28,7 @@ header{
 }
 
 .items {
-    border: inset 4px red ;
+    border: inset 4px rgb(255, 4, 4) ;
 
 }
 .vidio{
@@ -104,4 +104,60 @@ header{
     border-radius: 20px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+a :hover{
+    color: rgb(0, 0, 0);
+    
+}
+a :active{
+    color: rgb(0, 0, 0);
+}
+a{
+    color: black;
+}
+
+
+    
+.ava {
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.morgen {
+    background-image: url('./morhen.jpg');
+}
+
+.opasn{
+    background-image: url('./opsnu.jpg');
+}
+.old{
+    background-image: url('./old.jpg');
+}
+
+input{
+    width: 500px;
+    height: 50px;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+}
+.poleznayinfa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.ceti{
+    width: 50px;
+    height: 50px;
+}
+.sotceti{
+    
+    display: flex;
+    justify-content: left;
 }
