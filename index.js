@@ -1,69 +1,123 @@
+// const age = 18
+// if (age > 18) {
+//     console.log('true');
+// } else if (age < 18){
+//     console.log('false');
+// } else{
+//     console.log('= 18');
+// }
+// console.log(1 === "1");
+
+// const sex = 'man'
+// const age = '30'
+// const color = 'blue'
+
+// if( (sex === 'man' || age >= 30) && color ===  'blue' ){
+//     console.log('u r welcome');
+// } else {
+//     console.log('go to heme woman');
+// }
 
 
-const str = "asd"
-// console.log(str.toLocaleLowerCase());
-// console.log(str.toUpperCase());
 
-// console.log(str.repeat(7))
 
-// console.log(str.toLocaleLowerCase() .includes('vet'))
 
-// const str2 = "RICGS"
-// console.log(str.concat(str2, 'asdafas', 1234));
+// const n = 'mixa'
+// if (n !== 'mixa') {
 
-// console.log(str.startsWith('pRiV'));
-// console.log(str.endsWith('!'))
-// console.log(str.replaceAll('p', '#'))
+// } else {
+//     console.log('yes');
+// }
 
-//  console.log(str.charAt(5))
-// console.log(str.indexOf('p'))
-// console.log(str.lastIndexOf("p"))
-// console.log(str.slice(2, 5))
-// console.log(str.substr(2, 2))
+// console.log(24836 % 31);
 
-// const inner = prompt()
-// console.log(inner.toLocaleUpperCase())
-// const mass = [4, 'chrom', null, {a:5}, [0,1,2,3,89]]
-// console.log(mass[4][4]);
-// const mass = [1,2,3,4,5,6,98,100]
-// const mass2 = [1,24,65]
-// console.log(mass.concat(mass2, 12395));
-// const str2 = 'qwerty asdsfa zxclfds'
-// const massstr2 = str2.split(' ')
-// console.log(massstr2)
+// const userName = 'milee'
+// switch (userName) {
+//     case 'mile': 
+//         console.log('hello, mile');
+//         break;
 
-// const strmass3 = mass3.join('&')
-// console.log(strmass3);
-// console.log(mass4.reverse());
-// console.log(mass4.includes(6));
-// const mass4 = [0,9,8,7,6]
-// mass4.push(1,4,645,1234)
-// console.log(mass4);
-// const pop = mass4.pop()
-// console.log(mass4);
-// console.log(pop);
-// const mass5 =[3,14,543,12]
-// mass5.shift(3,14,543)
-// console.log(mass5);
-// console.log(mass6.sort((a,b) => a - b));
-// const mass6 = [123,4,2153,523,9124,529523]
+//         case 'afanasiy':
+//             console.log('hello, afanasiy');
 
-// const mass3 = [0,1,2,3,4,5,6,7,8,9]
-// console.log(mass3.slice(4,7));
-// console.log(mass3. splice(4, 3));
-// console.log('-------')
-//     console.log(mass3)
-//         console.log(mass3)
-// console.log(mass3.splice(4,3, 89, 213));
-// console.log(mass3);
+//             break;
+//         case 'mary':
+//             console.log('poka, mary');
+            
+//     default:
+//         console.log('who are you');
+//         break;
+// }
 
-    const myName = prompt()
-    console.log(myName);
-    const arrName = myName. split(' ')
-    console.log(arrName);
-    arrName[0] = arrName[0].tolowerCase()
-    arrName[1] = arrName[1].toupperCase()
-    console.log(arrName);
-    const newMyname = arrName. join(' ')
-    console.log(newMyname);
 
+
+
+// let i = 1
+// while (1 < 5) {
+//     console.log(i)
+//     i = i +
+// }
+// i++
+
+
+// let i = 1
+// while (i < 5) {
+//     console.log(i)
+//     i++
+//     if (i == 10) {
+//         break;
+//     }
+// }
+
+// let j = 0 
+
+// do{
+//     console.log(j)
+//  j++
+// } while (j < 5) {
+    
+// }
+
+// for (let i = 0; i < 1230; i++){
+   
+//     if (i % 2 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+    // const arr = [31,32,43,65,123,423,634,62,24,21,]
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+        
+    // }
+
+//  const arr = [31,24,54,677,53,54,65,76]
+//     for(let i =0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0) {
+//             console.log(arr[i]);
+//         }
+//     }
+
+// const arr = [31,24,54,677,53,54,65,76]
+//     for(let i =0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0 && i % 2 !== 0) {
+//             console.log(arr[i]);
+//         }
+//     }
+// const arr = [31,24,54,677,53,54,65,76]
+//     for(let i =0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0 && i % 2 !== 0) {
+//             console.log(arr[i]);
+//         }
+//     }
+const arr = [23,34,56,768,987,56,]
+
+let sum = 0
+
+for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i]
+    console.log(sum);
+}
