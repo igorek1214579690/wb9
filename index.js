@@ -1,148 +1,125 @@
-// const obj = {}
-// const obj2 = new Object()
-// console.log(obj);
-// console.log(obj2);
-
 // const obj = {
-//     name: 'igor',
-//     job: 'reaktor',
-//     age: '89',
-//     sex: 'man'
+//     firstName: 'igor',
+//     secondName: 'streltsov',
+//     info: function(phone,email) {
+//         console.log(`${this.firstName} ${this.secondName}`);
+//         if (phone && email){
+//         console.log('Phone:', phone);
+//         console.log('Email:', email);
+//     }
 
-// }
-// const objKeys = Object.keys(obj)
-// console.log(objKeys);
-
-// const objValues = Object.values(obj)
-// console.log(objValues);
-
-// console.log(obj.isMarried);
-// obj.isMarried = true
-// console.log(obj);
-// obj.job = 'mysor'
-// console.log(obj);
-
-// const obj2 = obj
-// console.log(obj2);
-
-// obj2.field = 'qqqq'
-// console.log(obj);
-// console.log(obj2);
-
-// const obj3 = {}
-
-// for ( prop in obj){
-//     console.log(prop);
-//     obj3[prop] = obj[prop]
-// }
-// console.log(obj3);
-// obj3.lol = 'lol'
-
-// console.log(obj);
-// console.log(obj3);
-
-// const obj4 = Object.assign(obj)
-// console.log('obj4', obj4);
-
-// const obj5 = Object.freeze(obj)
-// obj5.lol = 'lol' 
-// console.log('obj5', obj5);
-// console.log(obj.hasOwnProperty('job'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function sayHello() {
-//     console.log('hello!');
-    
-
-// }
-// sayHello()
-
-// function summ(a,b) {
-//     console.log(a+b);
+//     }
 // }
 
-// summ(4,106)
-// summ(987654321,123456789)
-
-// function summ(a,b,c) {
-//     console.log(a-b+c);
-    
-// }
-// summ(123,1231246,346)
-// summ(346,123,1231246)
+// obj.info()
 
 
-// const summ2 = function(a,b,c) {
-//     console.log(a+b-c);
+// const o1 = {
+//     firstName: 'Janny',
+//     secondName: 'Nikolas',
 
 // }
-// summ2(123,1231246,346)
-// summ2(346,123,1231246)
-
-
-// const summ3 = (a,b,c) => console.log(a+b-c);
-// summ3(123,1231246,346)
-// summ3(346,123,1231246)
+// const bindFunction = obj.info.bind(o1)
+// bindFunction('111-11-1', 'janny@ua.by')
 
 
 
+// const o2 = {
+//     firstName: 'MArry',
+//     secondName: 'KOCK',
 
-// window.onload = (function(){
-//     console.log('hello');
-// }) ()
-
-
-// function args (a,b,c, ...rest){
-//     const sum = a+b+c
-//     console.log(rest);
 // }
-// args(1,2,3,4,5,6,7,8)
+// obj.info.call(o2, '123-23-1', 'sabaca@goog.ro')
 
-// const arr = [1,2,3,4,5,6]
-// console.log(...arr);
+// const o3 = {
+//     firstName: 'netero',
+//     secondName: 'Isaac ',
 
-// function dis(a,b,c){
-//         const disc = (b*b-4*a*c);
-//         console.log(disc);
-//         if(disc > 0 ){
-//             console.log('2 корня');
-//         const x1 = (-b + Math.sqrt(disc))/(2*a)
-//         const x2 = (-b - Math.sqrt(disc))/(2*a)
-//         console.log(x1);
-//         console.log(x2); 
-
-//          }  else if(disc === 0){
-//                 const x = (-b+(disc) )/(2*a)
-//                 console.log(x);
-//          }   else{
-//             console.log('нет корней');
-//          }
 // }
 
-// dis(3,-4,94)
+// obj.info.apply(o3, ['321-432-223', 'ishak@goog.tu'])
+
+// ==================================================================
+// Promise
+
+
+// const promise = new Promise(function(resolve,reject){
+//     setTimeout(() => reject('error'), 2000)
+//     // setTimeout(() => reject('done!'), 2000)
+// })
+// console.log(promise);
+// promise.then(
+//     result => console.log(result),
+//     // error => console.log(error)
+// )
+// .catch( error => console.log(error))
+// .finally ( ()=> console.log('finally'))
+
+// ===================================================================
+// Asycn await
 
 
 
-function stri (str){
-    let counter = 0
-    const arr= [' ',',','!','.']
+// const url = 'https://jsonplaceholder.typicode.com/users/1'
 
-    for(let i = 0; i < str.length; i++ ) {
-        if ( str[i] === str[i].toUpperCase() && !arr.includes(str[i])){
-            counter++
-        }
-    }
-    console.log(counter);
+// const f = async () => {
+//    await fetch(url)
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+//     // .catch(err => console.log(err))
+      
+// }
+// // f()
+
+// const a =() => {
+//     console.log('start');
+//     f()
+//     console.log('end');
+// }
+// // a()
+
+// const err = () => {
+//     throw 'some error =('
+// }
+
+
+// const tryCatch = () => {
+//     try{
+//         a()
+//         // err()
+//     } catch (error){
+//         console.log(error)
+//     } finally{
+//         console.log('fianlly');
+//     }
+// }
+// tryCatch()
+
+// console.log('start');
+// setTimeout(() => console.log('settimeout'), 0)
+// console.log('end');
+
+
+
+
+
+
+
+
+
+
+const usersUrl = 'https://jsonplaceholder.typicode.com/users'
+async function getUsers() {
+    let arr;
+   await  fetch(usersUrl)
+        .then(response => response.json())
+        .then(users => arr = users)
+        console.log(arr);
+//     // return arr
 }
-stri('I HAVE car')
+getUsers()
+
+
+
+const usersArray = getUsers()
+console.log(usersArray);
