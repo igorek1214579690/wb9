@@ -1,0 +1,21 @@
+img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+button{
+    background-color: slateblue;
+    color:rgb(255, 217, 0);
+    border: none;
+    border-radius: 20%;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+.game{
+    display: none;
+}
+.game-try{
+    display: none;
+}
