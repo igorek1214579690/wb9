@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <div class="user">
-        <p>введи имяя</p>
-        <input id="name" type="text" placeholder="введи имяяя">
-        <button id="to-try" >давай дальше</button> 
+    <div class="user-name">
+        <p>Введи имя</p>
+        <input id="name" type="text" placeholder="Введи имя"><br>
+        <button id="to-count">Давай дальше</button>
     </div>
-    <div class="game-try">
-        <p>сколько раз будем играть</p>
-        <input id="try" type="text" placeholder="введи кол-во попыток">
-        <button id="to-game" >давай дальше</button>
+    <div class="game-count">
+        <p>Сколько раз будем игать?</p>
+        <input id="count" value="1" type="number" placeholder="Количество попыток"><br>
+        <button id="to-game">Давай дальше</button>
     </div>
     <div class="game">
-        <img id="jock" src="jock.jpg" alt="asd">
-        <img id="tualet" src="tualet.jpg" alt="asd">
-        <img id="rock" src="duane.jpeg" alt="asd">
+        <div class="pics">
+            <img id="rock" src="./duane.jpeg" alt="">
+            <img id="scissors" src="./jock.jpg" alt="">
+            <img id="paper" src="./tualet.jpg" alt="">
+        </div>
+        <div>
+            <div>
+                <span>Игр сыграно: </span><span id="game-all">0</span>
+            </div>
+            <div>
+                <span>Ваших побед: </span><span id="user-win">0</span>
+            </div>
+            <div>
+                <span>Побед компьютера: </span><span id="pc-win">0</span>
+            </div>
+        </div>
+        <div class="middle-result">
+            <span id="middle-result"></span>
+        </div>  
+        <div class="result">
+            <span id="result"></span>
+        </div> 
     </div>
-
-
-
-
     <script src="./index.js"></script>
 </body>
 </html>
