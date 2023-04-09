@@ -1,15 +1,16 @@
 @import './colors.scss';
 
 header {
-    display: grid;
+    display: flexbox;
     grid-template-columns: 1fr 5fr 2fr;
     background-color: $gray;
+    text-align: center;
     .logo {
-
+        
     }
 
     .company-name {
-
+        
     }
 
     .contacts {

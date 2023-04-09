@@ -9,6 +9,7 @@ export const user = async () => {
     const userFirstName = document.getElementById('user-firstName')
     const userSecondName = document.getElementById('user-secondName')
     const avatar = document.getElementById('avatar')
+    
     avatar.style.width = '50px'
     avatar.style.height = '50px'
     avatar.style.borderRadius = '50%'

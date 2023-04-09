@@ -1,3 +1,11 @@
-$red: red;
-$blue: blue;
-$gray: gray;
+$red: rgb(0, 0, 0);
+$blue: rgb(255, 255, 255);
+$gray: rgb(69, 80, 47);
+ header{
+    background: rgb(112,34,195);
+background: linear-gradient(0deg, rgba(112,34,195,1) 0%, rgba(180,169,42,1) 42%, rgba(117,117,117,1) 69%, rgba(201,49,89,1) 91%, rgba(223,66,102,1) 96%, rgba(255,0,51,1) 99%);
+ }
+ footer{
+    background: rgb(112,34,195);
+background: linear-gradient(0deg, rgba(112,34,195,1) 0%, rgba(180,169,42,1) 42%, rgba(117,117,117,1) 69%, rgba(201,49,89,1) 91%, rgba(223,66,102,1) 96%, rgba(255,0,51,1) 99%);
+ }
