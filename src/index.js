@@ -1,6 +1,5 @@
 import {PATH, location} from './shared/locations' 
 import {links} from './shared/links'
-import {user} from './components/main/main'
 import './style.scss';
 
 window.onload = () => {
@@ -8,7 +7,6 @@ window.onload = () => {
     switch (pathURL) {
         case location.main:
             links()
-            user()
             break;
         case location.page1:
             links()

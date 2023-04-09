@@ -1,25 +1,18 @@
+import{api} from '../../api/api';
+import axios from 'axios';
 
-import {getUser} from '../../api/api-handlers'
-import {api} from '../../api/fake-api'
 
+const add = document.getElementById('add')
 
-let users= []
-export const user = async () => {
-    await getUser(`${api}users`).then(res => users =res.users)
-    const userFirstName = document.getElementById('user-firstName')
-    const userSecondName = document.getElementById('user-secondName')
-    const avatar = document.getElementById('avatar')
-    
-    avatar.style.width = '50px'
-    avatar.style.height = '50px'
-    avatar.style.borderRadius = '50%'
-    console.log(users);
+const post = async () => {
+    const postObj = await axios.post(`${api.db}/user.json`, {
+        username: 'lol',
+        password: 42
+    });
+    return console.log(postObj);
+}
 
-    users.forEach(el => {
-        if(el.id == 14) {
-            userFirstName.innerHTML = el.firstName;
-            userSecondName.innerHTML = el.lastName;
-            avatar.src = el.image
-        }
-    })
+add.onclick = () => {
+    // post()
+    console.log('ll');
 }
