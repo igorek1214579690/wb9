@@ -8,7 +8,7 @@ import axios from "axios"
 
 const db_url = 'https://asda-978f7-default-rtdb.firebaseio.com'
 
-   export const getItems = () => {
+   export const getJackets = () => {
         return axios.get(`${db_url}/jacket.json`)
         .then(res => {
             const jacket = Object.keys(res.data)
@@ -19,8 +19,9 @@ const db_url = 'https://asda-978f7-default-rtdb.firebaseio.com'
                     console.log(jacket[i]);
                     const jack = document.getElementById('jacket')
                     const card = document.createElement('div')
+                    card.classList.add('card')
                     
-                    const price = document.createElement('p')
+                    const price = document.createElement('h4')
                     const link = document.createElement('div')
                     link.classList.add('pic')
                     const description = document.createElement('p')
@@ -42,5 +43,123 @@ const db_url = 'https://asda-978f7-default-rtdb.firebaseio.com'
                 
                 
                 
+        })
+    }
+
+
+
+
+    export const getBoots = () => {
+        return axios.get(`${db_url}/boots.json`)
+        .then(res => {
+            // console.log(res.data);
+            const boots = Object.keys(res.data).map( key => ({...res.data[key]}))
+            console.log(boots);
+            
+                for (let i = 0; i < boots.length; i++) {
+                    const bootDiv = document.getElementById('boots')
+                    console.log(boots[i]);
+                    const card = document.createElement('div')
+                    card.classList.add('card')
+                    
+                    const price = document.createElement('h4')
+                    const link = document.createElement('div')
+                    link.classList.add('pic')
+                    const description = document.createElement('p')
+                    const title = document.createElement('h2')
+                    
+                    title.innerText = boots[i].title
+                    link.style.backgroundImage = `url('${boots[i].link}')`
+                    description.innerText = boots[i].description
+                    price.innerText = boots[i].price
+
+                    card.append(
+                        title,
+                        link,
+                        description,
+                        price
+                        )
+                        bootDiv.append(card)
+                }
+        
+        })
+    }
+
+
+
+
+
+    export const getTrousers = () => {
+        return axios.get(`${db_url}/trousers.json`)
+        .then(res => {
+            // console.log(res.data);
+            const trousers = Object.keys(res.data).map( key => ({...res.data[key]}))
+            console.log(trousers);
+            
+                for (let i = 0; i < trousers.length; i++) {
+                    const trousersDiv = document.getElementById('trousers')
+                    console.log(trousers[i]);
+                    const card = document.createElement('div')
+                    card.classList.add('card')
+                    
+                    const price = document.createElement('h4')
+                    const link = document.createElement('div')
+                    link.classList.add('pic')
+                    const description = document.createElement('p')
+                    const title = document.createElement('h2')
+                    
+                    title.innerText = trousers[i].title
+                    link.style.backgroundImage = `url('${trousers[i].link}')`
+                    description.innerText = trousers[i].description
+                    price.innerText = trousers[i].price
+
+                    card.append(
+                        title,
+                        link,
+                        description,
+                        price
+                        )
+                        trousersDiv.append(card)
+                }
+        
+        })
+    }
+
+
+
+
+    export const getUnderpants= () => {
+        return axios.get(`${db_url}/underpants.json`)
+        .then(res => {
+            // console.log(res.data);
+            const underpants = Object.keys(res.data).map( key => ({...res.data[key]}))
+            console.log(underpants);
+            
+                for (let i = 0; i < underpants.length; i++) {
+                    const underpantsDiv = document.getElementById('underpants')
+                    console.log(underpants[i]);
+                    const card = document.createElement('div')
+                    card.classList.add('card')
+                    
+                    const price = document.createElement('h4')
+                    const link = document.createElement('div')
+                    link.classList.add('pic')
+                    const description = document.createElement('p')
+                    const title = document.createElement('h2')
+                    
+                    title.innerText = underpants[i].title
+                    link.style.backgroundImage = `url('${underpants[i].link}')`
+                    description.innerText = underpants[i].description
+                    price.innerText = underpants[i].price
+
+                    card.append(
+                        title,
+                        link,
+                        description,
+                        price
+                        )
+                        underpantsDiv.append(card)
+                }
+        
         })
     }

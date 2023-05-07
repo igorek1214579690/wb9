@@ -1,4 +1,3 @@
-
 #carouselExampleControls{
     display: flex;
     align-items: center;
@@ -7,33 +6,32 @@
 
 
 header{
-    background: rgb(112,34,195);
-   
-    height: 100px;
-background: linear-gradient(0deg, rgba(112,34,195,1) 0%, rgba(180,169,42,1) 42%, rgba(117,117,117,1) 69%, rgba(201,49,89,1) 91%, rgba(223,66,102,1) 96%, rgba(255,0,51,1) 99%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: azure;
 }
 
-.card {
-    width: 200px;
-    height: 300px;
-    border: solid brown;
-    margin: 10px;
+// .card {
+//     width: 200px;
+//     height: 300px;
+//     border: solid brown;
+//     margin: 10px;
     
-}
+// }
 
-.pic {
-    width: 300px;
-    height: 420px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-    margin: 79px;
+// .pic {
+//     // width: 300px;
+//     // height: 420px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color: aqua;
+//     // margin: 79px;
     
-}
+// }
 
 #jacket {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 50px;
 }

@@ -36,3 +36,34 @@ body {
 
     }
 }
+
+.pic {
+    width: 444px;
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+    // margin: 79px;
+    
+}
+
+.card {
+    width: 450px;
+    height: 500px;
+    border: solid 2PX rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
+    
+}
+
+
+
+footer{
+    background-color: aliceblue;
+}
+
+
+p{
+    font-size: 18px;
+}
