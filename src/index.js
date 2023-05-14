@@ -1,10 +1,14 @@
 import {PATH, location} from './shared/locations' 
 import {links} from './shared/links'
 import './style.scss';
-import { getBoots, getJackets, getTrousers, getUnderpants } from './api/api-handlers';
+import { getBoots, getJackets, getTrousers, getUnderpants, card } from './api/api-handlers';
 
 window.onload = () => {
     const pathURL = window.location.pathname
+    if (!localStorage.getItem('card')) {
+        localStorage.setItem('card', JSON.stringify([]))
+    }
+    
     switch (pathURL) {
         case location.main:
             links()
@@ -24,6 +28,11 @@ window.onload = () => {
         case location.page4:
             links()
             getUnderpants()
+            break;
+        case location.basket:
+            links()
+            card()
+            // basket()
             break;
         default:
             window.location.href = PATH.main

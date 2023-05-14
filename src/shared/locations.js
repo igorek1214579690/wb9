@@ -4,6 +4,7 @@ export const PATH = {
     page2: 'page2.html',
     page3: 'page3.html',
     page4: 'page4.html',
+    basket: 'basket.html'
 }
 
 export const location = {
@@ -12,4 +13,5 @@ export const location = {
     page2: '/page2.html',
     page3: '/page3.html',
     page4: '/page4.html',
+    basket: '/basket.html'
 }

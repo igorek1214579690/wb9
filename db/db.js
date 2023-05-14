@@ -4,6 +4,7 @@ const description = document.getElementById('description')
 const price = document.getElementById('price')
 const product = document.getElementById('product')
 const btn = document.querySelector('.click')
+const linkProducts = document.getElementById('linkProducts')
 
 const db_url = 'https://asda-978f7-default-rtdb.firebaseio.com'
 
@@ -13,6 +14,7 @@ btn.onclick =  ()  => {
         title: title.value,
         description: description.value,
         price: price.value
+        linkProducts: link.value
     }   
     console.log(data);
 
@@ -20,6 +22,7 @@ btn.onclick =  ()  => {
     title.value = ''
     description.value = ''
     price.value = ''
+    linkProducts.value = ''
 
     return fetch(`${db_url}/${product.value}.json`,
     {

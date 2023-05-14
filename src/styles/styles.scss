@@ -10,7 +10,7 @@ body {
     .wrapper {
         display: grid;
         grid-template-rows: 10vh 80vh 10vh;
-
+        
         .content {
             
             nav {
@@ -60,10 +60,28 @@ body {
 
 
 footer{
-    background-color: aliceblue;
+   background-color: none;
 }
 
 
 p{
     font-size: 18px;
+}
+
+.LogIn{
+    
+    
+    
+}
+
+
+button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(103, 131, 131);
+    margin-left: 120px;
+    margin-bottom: 10px;
+    
 }

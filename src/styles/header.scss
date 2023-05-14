@@ -5,8 +5,38 @@ header {
     grid-template-columns: 1fr 5fr 2fr;
     background-color: $gray;
     text-align: center;
-    .logo {
+    .LogIn{
+        position: absolute;
+        top: 0;
+        right: 0;
+       
+        border: none;
+        background-color: rgb(65, 63, 63);
+        color: crimson;
+        width: 60px;
+        height: 30px;
+        margin-right: 20px;
         
+    }
+    .SignIn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+       
+        border: none;
+        background-color: rgb(65, 63, 63);
+        color: crimson;
+        width: 60px;
+        height: 30px;
+        margin-right: 20px;
+
+
+    }
+    
+    .logo {
+    
+        
+      
     }
 
     .company-name {
