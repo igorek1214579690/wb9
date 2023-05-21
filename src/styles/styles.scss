@@ -6,11 +6,13 @@
 body {
     margin: 0;
     padding: 0;
-
+    height: 100%;
     .wrapper {
         display: grid;
         grid-template-rows: 10vh 80vh 10vh;
-        
+        display: flex;
+	flex-direction: column;
+	min-height: 100%;
         .content {
             
             nav {
@@ -28,7 +30,7 @@ body {
 
             section {
                 height: 97%;
-                overflow-y: auto;
+                // overflow-y: auto;
                 padding: 10px;
             }
         }
@@ -44,8 +46,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: aqua;
-    // margin: 79px;
-    
+    // margin: 79px;  
+
 }
 
 .card {
@@ -54,6 +56,7 @@ body {
     border: solid 2PX rgb(0, 0, 0);
     margin: 30px;
     text-align: center;
+  
     
 }
 
@@ -84,4 +87,48 @@ button{
     margin-left: 120px;
     margin-bottom: 10px;
     
+}
+
+
+.foot{
+    border: none;
+    background-color: inherit;
+    padding: 14px 18px;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    color: aliceblue;
+    
+    
+}
+
+
+.footer-info {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 14px;
+  
+ 
+    display: flex;
+    grid-gap: 20px;
+    gap: 20px;
+    border-top: 0px solid hsla(0,0%,100%,.2);
+    padding: 30px 0;
+    
+}
+
+
+.footer-list {
+    padding: 0;
+    list-style: none;
+}
+
+#from-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#underpants{
+    display: flex;
+    flex-wrap: wrap;
 }
